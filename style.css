@@ -2,12 +2,15 @@ body {
     margin: 0;
     padding: 0;
 
+    /* Background Image + Light Overlay */
     background: 
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('https://i.ibb.co/B26kF7MM/birthday.jpg')
-    no-repeat center center;
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('bg.jpg');
 
-    background-size: cover;
+    background-size: contain;          /* full image dikhegi */
+    background-position: center top;   /* face upar dikhega */
+    background-repeat: no-repeat;
+    background-color: black;           /* empty space fill */
 
     height: 100vh;
     display: flex;
@@ -16,12 +19,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Container */
+/* Center container */
 .container {
     text-align: center;
 }
 
-/* Button */
+/* Button style */
 button {
     padding: 15px 30px;
     font-size: 20px;
@@ -38,7 +41,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Hidden */
+/* Hidden class */
 .hidden {
     display: none;
 }
@@ -52,6 +55,7 @@ button:hover {
 
 #surprise h1 {
     font-size: 40px;
+    margin-bottom: 10px;
 }
 
 #surprise p {
