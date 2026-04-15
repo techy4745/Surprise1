@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    /* Background Image + Dark Overlay */
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://ibb.co/LdgKHq77') 
+    no-repeat center center/cover;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Center Container */
+.container {
+    text-align: center;
+}
+
+/* Button Styling */
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    background: #ff4081;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: #e91e63;
+    transform: scale(1.05);
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Surprise Text */
+#surprise {
+    margin-top: 20px;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Heading */
+#surprise h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph */
+#surprise p {
+    font-size: 20px;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
