@@ -2,11 +2,12 @@ body {
     margin: 0;
     padding: 0;
 
-    /* Background Image + Dark Overlay */
     background: 
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('https://i.ibb.co/B26kF7MM/birthday.jpg') 
-    no-repeat center center/cover;
+    url('https://i.ibb.co/B26kF7MM/birthday.jpg')
+    no-repeat center center;
+
+    background-size: cover;
 
     height: 100vh;
     display: flex;
@@ -15,12 +16,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Center Container */
+/* Container */
 .container {
     text-align: center;
 }
 
-/* Button Styling */
+/* Button */
 button {
     padding: 15px 30px;
     font-size: 20px;
@@ -32,36 +33,32 @@ button {
     transition: 0.3s;
 }
 
-/* Button Hover Effect */
 button:hover {
     background: #e91e63;
     transform: scale(1.05);
 }
 
-/* Hidden Class */
+/* Hidden */
 .hidden {
     display: none;
 }
 
-/* Surprise Text */
+/* Surprise text */
 #surprise {
     margin-top: 20px;
     color: white;
     animation: fadeIn 2s ease-in-out;
 }
 
-/* Heading */
 #surprise h1 {
     font-size: 40px;
-    margin-bottom: 10px;
 }
 
-/* Paragraph */
 #surprise p {
     font-size: 20px;
 }
 
-/* Fade Animation */
+/* Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
